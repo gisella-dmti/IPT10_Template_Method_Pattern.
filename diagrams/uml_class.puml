@@ -1,0 +1,25 @@
+@startuml
+skinparam classAttributeIconSize 0
+abstract class StudentReport {
+  + generateReport(): void
+  # getStudentData(): void
+  {abstract} # processData(): void
+  {abstract} # formatReport(): void
+  # displayReport(): void
+}
+class AcademicReport {
+  # processData(): void
+  # formatReport(): void
+}
+class AttendanceReport {
+  # processData(): void
+  # formatReport(): void
+}
+StudentReport <|-- AcademicReport
+StudentReport <|-- AttendanceReport
+note right of StudentReport::generateReport
+Template Method:
+controls the fixed sequence
+of the report algorithm.
+end note
+@enduml
