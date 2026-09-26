@@ -1,0 +1,11 @@
+IPT10 TEMPLATE METHOD — SUBMISSION CHECKLIST
+
+[✓] 5-page scholarly body
+[✓] Cover and references
+[✓] GoF, Head First, Zandstra, peer-reviewed and open-access sources
+[✓] UML class and sequence diagrams
+[✓] PHP 8.1+ implementation
+[✓] README.md
+[✓] php -l evidence
+[✓] Program output evidence
+[✓] Case study, use/not-use table, reflection
