@@ -1,0 +1,13 @@
+@startuml
+actor Client
+participant "StudentReport" as Base
+participant "AcademicReport" as Academic
+Client -> Base: generateReport()
+Base -> Base: getStudentData()
+Base -> Academic: processData()
+Academic --> Base: completed
+Base -> Academic: formatReport()
+Academic --> Base: completed
+Base -> Base: displayReport()
+Base --> Client: completed
+@enduml
